@@ -46,7 +46,14 @@ subnets = {
     virtual_network_name = "vnet-prod"
     address_prefixes     = ["10.0.5.0/24"]
   }
+  snet6 = {
+    name                 = "extraSubnet"
+    resource_group_name  = "rg-prod"
+    virtual_network_name = "vnet-prod"
+    address_prefixes     = ["10.0.6.0/24"]
+  }
 }
+
 
 public_ips = {
   pip_bastion = {
